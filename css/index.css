@@ -264,8 +264,8 @@ footer {
 }
 .team-pic {
   border-radius: 50%;
-  height: 30em;
-  width: 30em;
+  height: 40em;
+  width: 40em;
   border: 4px solid #e8e9eb;
   display: block;
   margin-left: auto;
@@ -273,6 +273,12 @@ footer {
 }
 .team-pic:hover {
   box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
+}
+.team {
+  width: 200%;
+}
+.one {
+  padding: 2%;
 }
 button {
   -moz-transition: background-color 0.25s ease-in-out;
@@ -302,4 +308,17 @@ li {
 }
 .h2-team {
   text-align: center;
+}
+.name-title {
+  border: 0.4rem solid #e8e9eb;
+  border-radius: 2rem;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 20rem;
+  text-align: center;
+  color: white;
+  background: #0090c5;
+  text-shadow: 0 0 0.5rem black;
 }
