@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head profile="img.How-To">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width" initial-scale="1.0">
-        <title> How To - about Us</title>
-
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="sytlesheet">
         <link href="css/index.css" rel="stylesheet">
+        <title> How To - about Us</title>
        </head>
 
     <body>
@@ -27,41 +28,55 @@
                 <br>
                 <h2 class="m-team">Meet The Team</h2>
          <Section class="middle-section">
-                                            
-            <section class="hover team">                                                                       
-                <div class="one one1">
-                    <img class="team-pic" src="img/sent.png" alt="image ">
-                    <div class="back1">
-                    <h2 class="name-title">Sent Deyassa</h2>
-                    <p class="h2-team">Sent is the back bone behind the app</p>
-                </div>
-                </div>
-                
-                <div class="one two2">
-                    <img class="team-pic" src="img/danny.png" alt="image">
-                    <div class="back2">
-                    <h2 class="name-title"> Danny Town</h2>
-                    <p class="h2-team">Meet the guy who created the home landing page. It's awesome because of this guy.</p>
-                </div>
-                </div>
+                <section class="team">                                                                       
+               
+                        <div class="one">
+                                <div class="card">
+                                  <img class="picFace front" src="img/sent.png">
+                                  <div class="picFace back"><h2 class="name-title">Sent dayassa</h2><p class="h2-team">This is just an example of how you can customize the content of any card face.</p></div>
+                                </div>
+                              </div>
+                              <div class="one">
+                                <div class="card">
+                                  <img class="picFace front" src="img/tavin.png">
+                                  <div class="picFace back"><h2 class="name-title">Tevin Davis</h2><p class="h2-team">This is just an example of how you can customize the content of any card face.</p></div>
+                                </div>
+                              </div>
+                              <div class="one">
+                                <div class="card">
+                                  <img class="picFace front" src="img/danny.png">
+                                 <div class="picFace back"><h2 class="name-title">Danny Town</h2><p class="h2-team">This is just an example of how you can customize the content of any card face.</p></div>
+                                </div>
+                              </div>
+                              <div class="one">
+                                <div class="card">
+                                  <img class="picFace front" src="img/darren.jpg">
+                                  <div class="picFace back"><h2 class="name-title">Darren Angus</h2><p class="h2-team">This is just an example of how you can customize the content of any card face.</p></div>
+                                </div>
+                              </div>                             
+                              
+                    <script>
+                            TweenLite.set(".one", {perspective:800});
+                            TweenLite.set(".card", {transformStyle:"preserve-3d"});
+                            TweenLite.set(".back", {rotationY:-180});
+                            TweenLite.set([".back", ".front"], {backfaceVisibility:"hidden"});
 
-                <div class="one three3">
-                    <img class="team-pic" src="img/tavin.png" alt="image">
-                    <div class="back3">
-                    <h2 class="name-title">Tevin Davis</h2>
-                    <p class="h2-team">Why are the sample How-to template the best on the internet. Well you are looking at the creator</p>
-                </div>
-                </div>
+                            $(".one").hover(
+                            function() {
+                                TweenLite.to($(this).find(".card"), 1.2, {rotationY:180, ease:Back.easeOut});
+                            },
+                            function() {
+                                TweenLite.to($(this).find(".card"), 1.2, {rotationY:0, ease:Back.easeOut});  
+                            }
+                            );
 
-                <div class="one four4">                    
-                    <img class="team-pic" src="img/darren.jpg" alt="image">
-                     <div class="back4">
-                    <h2 class="name-title">Darren Angus</h2>
-                    <p class="h2-team">LOL</p>
-                </div>
-                </div>
+                            //intro
+                            TweenMax.staggerTo($(".card"), 1, {rotationY:-180, repeat:1, yoyo:true}, 0.1);
 
-            </section>
+                    </script>                  
+        
+                    </section>                         
+            
             <section class="sub-header">
                     
                 <div class="sub-headers">
@@ -139,6 +154,8 @@
         </div>
 
     </footer>
-</body>
+    
 
+    </body>
+    
 </html>

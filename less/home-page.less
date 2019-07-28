@@ -1,7 +1,3 @@
-.team {
-    display: flex;
-   
-}
 .container {
     width: 100%;
 }
@@ -18,55 +14,66 @@
     width: 100%;
     
 }
-
 .team {
-    min-height: 100%;
+    width: 300em;    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    // width: 200%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;    
+}
+  
+  .one{
+    width:40em;
+    height:40em;
+    position:relative;  
+    float:left;
+    margin-right:10px;
+    cursor:pointer;
+    -webkit-font-smoothing:antialiased;
+    
   }
-   .team > div {
-    display: flex; 
-    flex-basis: calc(50% - 14px);  
-    justify-content: center;
+  
+  .picFace{
+    position:absolute;
+    width:40em;
+    height:40em;
+    overflow:hidden;
+    border-radius: 50%;
+    display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
   }
-   
-   .grid > div:last-child {
-    display: flex; 
-    margin-top: 0px;
-    flex-basis: calc(100% - 22px);  
-    justify-content: center;
-    flex-direction: column;
+  
+  .front{
+    background-color:#333; 
+  }
+  
+  .back{
+    background-color:#333; 
+  } 
+    
+  .picFace .name-title{
+    margin:0px;
+    font-size: 1.5rem;
+    padding:10px 0px 10px 10px;
+    border: .4rem solid @gray;
+    background-color:#0090c5;
+    color:white;
+    text-align: center;
+    width: 40em;
+    
   } 
   
-  .team-pic {
-      border-radius: 50%;
-      height: 40em;
-      width: 40em;
-      border: 4px solid @gray;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-            
-  }
-
-  
- .team-pic:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 140, 186, 0.5);
- }
-
- .team {
-     width: 200%;
-     margin: 
-     
- }
-
- .one {
-     padding: 2%;
+  .h2-team{
+    padding:10px;
+    color:white;
+    line-height:24px;
     
- }
+  }
+  
 button {
  -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
@@ -93,26 +100,6 @@ a {
 
 li {
     height: 1.5em;
-}
-
-.h2-team {
-    text-align: center;
-}
-
-.name-title {
-    text-align: center;
-    border: .4rem solid @gray;     
-    border-radius: 2rem;
-    margin: auto;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    width: 20rem;
-    text-align: center;
-    color: white;
-    background: #0090c5;
-    text-shadow: 0 0 .5rem black;
-
 }
 
 
