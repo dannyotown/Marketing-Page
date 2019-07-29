@@ -2,15 +2,38 @@
     background: @greyish;   
     height: 15em;
     border-bottom: .3em solid @gray;
+    display: flex;
     
     .nav-container {
         .justifyAlign(center, center);       
         padding: 50px 0 0 50px;
+
+        .logo {
+            color: white;
+            background-color: #ff4486;
+            border-radius: 6px;
+            font-weight: 400;
+            font-family: 'Oleo Script', serif;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0.25em 0.2em 0.25em 0.2em;
+        }
         
         nav {
             .justifyAlign(center, center);
             width: 50%;
-            min-width: 1200px;
+            // min-width: 1200px;            
+            transition: .25s;
+            font-weight: 800;
+            letter-spacing: 0.025em;
+            color: #696969;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 0.5em 1em 0.5em 1em;
+
+            nav:hover {
+                background-color: white;
+            }
             
             a {
                 text-decoration: none;

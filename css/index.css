@@ -167,6 +167,7 @@ br {
   background: #e9e9e9;
   height: 15em;
   border-bottom: 0.3em solid #e0dbdb;
+  display: flex;
 }
 .nav-bar .nav-container {
   display: flex;
@@ -174,12 +175,31 @@ br {
   align-items: center;
   padding: 50px 0 0 50px;
 }
+.nav-bar .nav-container .logo {
+  color: white;
+  background-color: #ff4486;
+  border-radius: 6px;
+  font-weight: 400;
+  font-family: 'Oleo Script', serif;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.25em 0.2em 0.25em 0.2em;
+}
 .nav-bar .nav-container nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  min-width: 1200px;
+  transition: 0.25s;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  color: #696969;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.5em 1em 0.5em 1em;
+}
+.nav-bar .nav-container nav nav:hover {
+  background-color: white;
 }
 .nav-bar .nav-container nav a {
   text-decoration: none;
@@ -199,18 +219,33 @@ footer {
   align-items: center;
   border-top: 0.3em solid #e0dbdb;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    font-size: 12px;
+  }
+}
 .footer-content {
   padding: 0 0 50px 0;
   width: 100%;
   height: 15em;
-  justify-content: space-evenly;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
 .foot {
   width: 25%;
-  height: 5em;
+}
+@media (max-width: 500px) {
+  .foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .hide {
+    display: none;
+  }
 }
 .icons {
   display: flex;
@@ -237,13 +272,32 @@ footer {
   font-family: 'Open Sans', sans-serif;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+  }
+}
 .left {
   padding: 50px 0 0 50px;
   width: 65%;
 }
+@media (max-width: 500px) {
+  .left {
+    width: 100%;
+  }
+}
 .right {
   padding: 50px 50px 0 50px;
   width: 35%;
+}
+@media (max-width: 500px) {
+  .right {
+    width: 100%;
+    text-align: center;
+  }
 }
 .m-team {
   text-align: center;
@@ -261,7 +315,6 @@ footer {
 }
 .team {
   width: 100%;
-  height: 85em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
