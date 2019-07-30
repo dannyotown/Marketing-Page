@@ -1,0 +1,350 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #696969;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', Arial;
+  color: #444;
+  font-weight: 800;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 2.25;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+br {
+  line-height: 2.25;
+}
+body {
+  background-color: #E9e9e9;
+  font-family: 'Open Sans', sans-serif;
+  color: #696969;
+}
+body .howToContainer {
+  margin: 15% 0% 15% 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+body .howToContainer .howToFlex {
+  display: flex;
+  margin: 0% 7% 0% 7%;
+  flex-flow: row nowrap;
+  padding: 5%;
+}
+body .howToContainer .howToFlex .leftColumn {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 35%;
+  height: 100%;
+}
+body .howToContainer .howToFlex .leftColumn img {
+  margin-top: 5%;
+  width: 75%;
+  border-radius: 25px;
+}
+body .howToContainer .howToFlex .leftColumn button {
+  margin-top: 10%;
+  margin-bottom: 7%;
+  width: 75%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #0090c5;
+  padding: 2.5%;
+  border: none;
+}
+body .howToContainer .howToFlex .leftColumn .centerText {
+  text-align: center;
+  margin-right: 25%;
+}
+body .howToContainer .howToFlex .leftColumn .centerText .howToPictures {
+  display: flex;
+  flex-flow: row wrap;
+}
+body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a {
+  width: 49%;
+}
+body .howToContainer .howToFlex .leftColumn .centerText .howToPictures a img {
+  width: 90%;
+  height: 150px;
+}
+body .howToContainer .howToFlex .leftColumn .centerText h2 {
+  color: #444;
+  margin-top: 2%;
+  margin-bottom: 7.5%;
+}
+body .howToContainer .howToFlex .leftColumn .centerText a {
+  color: #0090c5;
+  text-decoration: underline;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+body .howToContainer .howToFlex .rightColumn {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+}
+body .howToContainer .howToFlex .rightColumn h1 {
+  color: #444;
+}
+body .howToContainer .howToFlex .rightColumn p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 3% 0 0% 0%;
+}
+body .howToContainer .howToFlex .rightColumn h2 {
+  color: #444;
+  margin: 4% 0% 2% 0%;
+}
+.nav-bar {
+  background: #e9e9e9;
+  height: 15em;
+  border-bottom: 0.3em solid #e0dbdb;
+  display: flex;
+}
+.nav-bar .nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 50px;
+}
+.nav-bar .nav-container .logo {
+  color: white;
+  background-color: #ff4486;
+  border-radius: 6px;
+  font-weight: 400;
+  font-family: 'Oleo Script', serif;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.25em 0.2em 0.25em 0.2em;
+}
+.nav-bar .nav-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: 0.25s;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  color: #696969;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.5em 1em 0.5em 1em;
+}
+.nav-bar .nav-container nav nav:hover {
+  background-color: white;
+}
+.nav-bar .nav-container nav a {
+  text-decoration: none;
+  color: #b7c3c7;
+  font-size: 2.5rem;
+  width: 200px;
+  text-align: center;
+}
+footer {
+  background: #e9e9e9;
+  padding: 50px 0 0 50px;
+  width: 100%;
+  flex-flow: wrap;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.3em solid #e0dbdb;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.footer-content {
+  padding: 0 0 50px 0;
+  width: 100%;
+  height: 15em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .hide {
+    display: none;
+  }
+}
+.icons {
+  display: flex;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+  border-radius: 0.35em;
+  outline: 0;
+  opacity: 0.9;
+  text-decoration: none;
+  background: #222222;
+}
+.contact-icons {
+  display: flex;
+  width: 11em;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
