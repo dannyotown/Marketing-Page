@@ -1,0 +1,93 @@
+body{
+    background-color:#E9e9e9;
+    font-family: 'Open Sans', sans-serif;
+    color: #696969;
+    .howToContainer{
+        margin: 15% 0% 15% 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+
+        .howToFlex{
+            display:flex;
+            margin: 0% 7% 0% 7%;
+            flex-flow: row nowrap;
+            padding: 5%;
+
+            .leftColumn{
+                display: flex;
+                flex-flow: column nowrap;
+                width: 35%;
+                height: 100%;
+
+                img{
+                    margin-top: 5%;
+                    width: 75%;
+                    border-radius: 25px;
+                }
+                button{
+                    margin-top: 10%;
+                    margin-bottom: 7%;
+                    width: 75%;
+                    font-size: 1.5rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    color: white;
+                    background-color:#0090c5; 
+                    padding: 2.5%;
+                    border: none;
+                }
+                .centerText{
+                    text-align: center;
+                    margin-right: 25%;
+                    
+                    .howToPictures{
+                            display: flex;
+                            flex-flow: row wrap;
+                            a{
+                                width: 49%;
+
+                                img{
+                                    width: 90%;
+                                    height: 150px;
+                                }
+                            }
+
+                        }   
+
+                    
+                        h2{
+                            color:#444;
+                            margin-top: 2%;
+                            margin-bottom: 7.5%;
+                        }
+                        a{
+                            color:#0090c5;
+                            text-decoration: underline;
+                            line-height: 2rem;
+                            font-size: 1rem;
+                        }
+                }
+            }
+
+            .rightColumn{
+                display: flex;
+                flex-flow: column nowrap;
+                width: 60%;
+                
+                h1{
+                    color:#444;
+                }
+                p{
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    margin: 3% 0 0% 0%;
+                }
+                h2{
+                    color:#444;
+                    margin: 4% 0% 2% 0%;
+                }
+            }
+        }
+    }
+}
