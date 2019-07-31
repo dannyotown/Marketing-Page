@@ -396,6 +396,7 @@ body .howToContainer .howToFlex .rightColumn {
   display: flex;
   flex-flow: column nowrap;
   width: 60%;
+  margin-top: 1.5%;
 }
 @media screen and (max-width: 800px) {
   body .howToContainer .howToFlex .rightColumn {
